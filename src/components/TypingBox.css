@@ -1,0 +1,78 @@
+.typing-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.timer {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.keys-to-type {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.key {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.key.pressed {
+  background-color: #c0e2ff;
+}
+
+.key.next-key {
+  background-color: #ffc0cb;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.keys-pressed,
+.accuracy,
+.overall-accuracy {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .typing-box {
+    padding: 10px;
+  }
+
+  .keys-to-type {
+    justify-content: center;
+  }
+
+  .key {
+    font-size: 16px;
+    padding: 3px;
+    margin: 3px;
+  }
+
+  .input-field {
+    font-size: 16px;
+  }
+
+  .keys-pressed,
+  .accuracy,
+  .overall-accuracy {
+    font-size: 16px;
+  }
+}
